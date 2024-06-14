@@ -1,0 +1,22 @@
+[package]
+name = "borrow_incentive"
+version = "0.1.0"
+published-at = "0x6152f696fc3a658f33c4b891764731a59153125ffedfa8bff7167c42823f58a9"
+
+[dependencies.Sui]
+git = "https://github.com/MystenLabs/sui.git"
+subdir = "crates/sui-framework/packages/sui-framework"
+rev = "mainnet"
+override = true
+
+[dependencies.ScallopProtocol]
+git = "https://github.com/scallop-io/sui-lending-protocol.git"
+subdir = "contracts/protocol"
+rev = "main"
+
+[dependencies.VeSca]
+git = "https://github.com/scallop-io/ve-sca-interface.git"
+rev = "main"
+
+[addresses]
+borrow_incentive = "0x002875153e09f8145ab63527bc85c00f2bd102e12f9573c47f8cdf1a1cb62934"
