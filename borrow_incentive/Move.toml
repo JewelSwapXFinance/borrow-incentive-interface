@@ -1,7 +1,7 @@
 [package]
 name = "borrow_incentive"
 version = "0.1.0"
-published-at = "0xf8365ce9fc69231ed36c2e6e114bea942e15b69d3e2b62e5e5bbf3d96ac6d34e"
+published-at = "0xd9f906db7f2fda2c22ca6320cb302f390939f16b5df60907f5237ce0b6d6eb56"
 
 [dependencies.Sui]
 git = "https://github.com/MystenLabs/sui.git"
