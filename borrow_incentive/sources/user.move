@@ -77,6 +77,7 @@ module borrow_incentive::user {
         abort 0
     }
 
+    /// DEPRECATED
     public entry fun stake_with_ve_sca(
         incentive_config: &IncentiveConfig,
         incentive_pools: &mut IncentivePools,
@@ -90,6 +91,25 @@ module borrow_incentive::user {
         ve_sca_key: &VeScaKey,
         clock: &Clock,
         ctx: &mut TxContext,
+    ) {
+        abort 0
+    }
+
+    public entry fun stake_with_ve_sca_v2(
+        incentive_config: &IncentiveConfig,
+        incentive_pools: &mut IncentivePools,
+        incentive_accounts: &mut IncentiveAccounts,
+        obligation_key: &ObligationKey,
+        obligation: &mut Obligation,
+        obligation_access_store: &ObligationAccessStore,
+        ve_sca_protocol_config: &VeScaProtocolConfig,
+        ve_sca_treasury: &mut VeScaTreasury,
+        ve_sca_table: &VeScaTable,
+        ve_sca_key: &VeScaKey,
+        ve_sca_subscriber_table: &mut VeScaSubscriberTable,
+        ve_sca_subscriber_whitelist: &VeScaSubscriberWhitelist,
+        clock: &Clock,
+        ctx: &mut TxContext
     ) {
         abort 0
     }
