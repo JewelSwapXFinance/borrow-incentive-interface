@@ -119,6 +119,20 @@ module borrow_incentive::user {
         abort 0
     }
 
+    public entry fun unstake_v2(
+        incentive_config: &IncentiveConfig,
+        incentive_pools: &mut IncentivePools,
+        incentive_accounts: &mut IncentiveAccounts,
+        obligation_key: &ObligationKey,
+        obligation: &mut Obligation,
+        ve_sca_subscriber_table: &mut ve_sca::ve_sca_subscriber::VeScaSubscriberTable,
+        ve_sca_subscriber_whitelist: &ve_sca::ve_sca_subscriber::VeScaSubscriberWhitelist,
+        clock: &Clock,
+        ctx: &mut TxContext
+    ) {
+        abort 0
+    }
+
     public entry fun force_unstake_unhealthy(
         incentive_config: &IncentiveConfig,
         incentive_pools: &mut IncentivePools,
