@@ -23,6 +23,7 @@ module borrow_incentive::user {
     use ve_sca::ve_sca::{Self, VeScaKey, VeScaTable};
     use ve_sca::config::VeScaProtocolConfig;
     use ve_sca::treasury::{Self as ve_sca_treasury, VeScaTreasury};
+    use ve_sca::ve_sca_subscriber::{VeScaSubscriberTable, VeScaSubscriberWhitelist};
 
     use coin_decimals_registry::coin_decimals_registry::CoinDecimalsRegistry;
     use x_oracle::x_oracle::XOracle;
